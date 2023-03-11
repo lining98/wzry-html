@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+input{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear{
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+/* 上面的导航 */
+/* 最上面的logo 排行榜 */
+.top_logo{
+    width: 990px;
+    height: 42px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+}
+.top_logo>img{
+    padding: 0 15px;
+}
+.top_logo .tl_cz,.tl_cz a{
+    color: #464646;
+}
+.tl_cz a:hover{
+    color:#c10800;
+}
+.tx_tc i{
+    color: #999;
+    font-size: 12px;
+}
+.top_logo_tp{
+    float: left;
+    width: 230px;
+    height: 40px;
+    margin-top: 1px;
+    margin-left: 10px;
+    background: url(./../img/top_tp.jpg);
+}
+.top_logo_tp:hover{
+    position: absolute;
+    left: 0;
+    background: url(./../img/logo_big.jpg);
+    width: 970px;
+    height: 185px;
+    border: 2px solid #fff;
+    z-index: 99;
+}
+.top_logo>ul>li{
+    float: left;
+    line-height: 40px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.top_logo>a{
+    color: #333;
+}
+.top_logo>a:nth-child(2):hover{
+    color: #ff4e00;
+}
+.top_logo_cz{
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: url(./../img/title_sprite.png) -30px 5px;
+}
+/* 腾讯游戏排行榜的弹窗 */
+.tx_tc{
+    position: relative;
+}
+.top_logo .tx_tc:hover .tx_phb{
+    display: block;
+    z-index: 10;
+}
+.tx_tc .tx_phb{
+    overflow: hidden;
+    width: 708px;
+    box-sizing: border-box;
+    padding: 0 30px 60px 35px;
+    position: absolute;
+    background-color: #fafafa;
+    right: 0;
+    top: 42px;
+
+    /* display: none; */
+}
+.tx_phb ul li a>span:first-child{
+    padding: 0 5px;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    background-color: #ccc;
+    color: #fff;
+}
+
+.tx_phb ul li a{
+    font-size: 12px;
+}
+.tx_phb ul li a:hover{
+    background-image: url(./../img/phb_CF.jpg);
+    background-size: 100%;
+    display: block;
+    height: 90px;
+}
+.tx_phb ul li a:hover span:last-child{
+    display: none;
+}
+.tx_phb ul{
+    width: 200px;
+}
+.tx_phb h3{
+    color: #333;
+    font-size: 15.4px;
+    float: left;
+    margin-bottom: 10px;
+}
+.tx_phb i{
+    line-height: 40px;
+    color: #ccc;
+    font-size: 14px;
+}
+.tx_phb a{
+    color: #333;
+}
+.tx_phb ul li .phb_qian3 span:first-child{
+    background-color: #c62828;
+}
+.news_dgame,.hot_dgame{
+    width: 200px;
+    margin-right: 20px;
+    float: left;
+}
+
+/* 导航 */
+.nav{
+    background: url(./../img/banner.jpg) no-repeat 0 0;
+    background-size: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.nav_out{
+    background-color: rgba(0, 0, 0,.8);
+}
+.nav_dh .hdsy{
+    width: 200px;
+    height: 85px;
+    position: absolute;
+    left: 0;
+}
+.nav_dh{
+    position: relative;
+    width: 1300px;
+    height: 85px;
+    margin: 0 auto;
+    background: url(./../img/logo.png) no-repeat 0 15px;
+
+}
+.nav_dh ul{
+    float: left;
+    padding-left: 230px;
+    overflow: hidden;
+}
+.nav_dh li{
+    float: left;
+    text-align: center;
+    /* margin-top: 18px; */
+    height: 85px;
+    width: 110px;
+}
+.nav_dh li:hover{
+    /* border-bottom: 5px solid #f3c258; */
+    /* background: linear-gradient(rgba(243, 194, 88,0),rgba(243, 194, 88,0.2)); */
+    background: url(./../img/index.png) no-repeat;
+}
+.nav_dh li:hover p{
+    color: #e4b653;
+}
+.nav_dh li:hover span{
+    color: #745f33;
+}
+
+.nav_dh li p{
+    margin-top: 18px;
+    font-size: 18px;
+    color: #c9c9dd;
+}
+.nav_dh li span{
+    font-size: 12px;
+    color: #858792;
+}
+/* 导航的搜索按钮 */
+.nav_dh>a>span{
+    float: left;
+    width: 27px;
+    height: 26px;
+    margin-left: 22px;
+    margin-top: 25px;
+    background: url(./../img/nav_search.png);
+}
+.nav_login{
+    overflow: hidden;
+    float: right;
+    width: 180px;
+    margin: 18px 15px 0 0;
+}
+.nav_login a{
+    color: #fff;
+}
+.nav_login span{
+    color: #858792;
+    font-size: 14px;
+}
+.nav_login .nav_login_logo{
+    float: left;
+    border: 1px solid #f3c258;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 44px;
+    height: 44px;
+    background: url(./../img/nav_login_logo.png) no-repeat 0px 0px;
+}
+
+.nav_kong,.nav_kong a{
+    width: 1200px;
+    display: block;
+    height: 420px;
+    margin: 10px auto 20px;
+}
+/* 导航的下拉菜单 */
+.nav_down{
+    width: 1200px;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    padding-left: 180px;
+    background-color: rgba(0, 0, 0,.8);
+    top: 85px;
+    left: 50%;
+    margin-left: -600px;
+    transition: height 0.3s;
+}
+.nav_down a{
+    color: #c9c9dd;
+    font-size: 13px;
+}
+.nav_down a:hover{
+    color: #f3c258;
+    text-decoration: underline;
+}
+
+.nav_down ul {
+    float: left;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+.nav_down li{
+    width: 110px;
+    line-height: 30px;
+}
+.nav_out:hover .nav_down{
+    height: 280px;
+}
+.nd_news,.nd_hot{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #c10800;
+    border-radius: 50%;
+    line-height: 16px;
+    font-size: 12px;
+}
+.nd_cz{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(./../img/title_sprite.png) no-repeat -20px 0px;
+    background-size: 80px;
+}
+
+
+/* 下面的页脚 */
+.footer_{
+    height: 362px;
+    background: url(./../img/bg_footer.jpg);
+    font-size: 12px;
+    color: #666;
+    overflow: hidden;
+}
+.footer_jz{
+    width: 1200px;
+    margin: 77px auto 0;
+}
+.footer_logo{
+    width: 355px;
+    height: 60px;
+    background: url(./../img/spr.png) no-repeat 0 0;
+}
+.footer_cont{
+    overflow: hidden;
+    margin-top: 20px;
+    border-top: 2px solid #d4d4d4;
+}
+.footer_l{
+    width: 520px;
+    box-sizing: border-box;
+}
+.footer_l>ul{
+    margin-top: 10px;
+}
+.footer_l li{
+    float: left;
+    margin-right: 12px;
+}.footer_l p{
+    margin-top: 15px;
+    line-height: 20px;
+}
+.footer_r{
+    width: 625px;
+    overflow: hidden;
+}
+.footer_r a{
+    color: #666;
+}
+.footer_ li{
+    line-height: 16px;
+}
+.footer_r span{
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin-top: 12px;
+}
+.footer_r li:nth-child(2){
+    margin: 10px 0;
+}
+.footer_r li:nth-child(3){
+    background: url(./../img/gswj.png) no-repeat left center;
+    padding-left: 18px;
+}
+.footer_r li:nth-child(4){
+    background: url(./../img/icplogo.png) no-repeat left center;
+    padding-left: 18px;
+}
+.footer_last_p{
+    margin-top: 30px;
+}
